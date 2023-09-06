@@ -1,1 +1,11 @@
-<p>doboz works!</p>
+<div class="box" [ngClass]="mozgatva?'grabbed':'not-grabbed'" 
+[ngStyle]="{
+    'left.px':xPozicio,
+    'top.px':yPozicio,
+}"
+(mousedown)="mozgatva=true" 
+(mouseup)="mozgatva=false"
+(mousemove)="dobozDragFolyamatban($event)"
+>
+    <h2>Húzd arrébb!</h2>
+</div>

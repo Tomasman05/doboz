@@ -3,11 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { DobozComponent } from './doboz/doboz.component';
+import { SzinvalasztoComponent } from './szinvalaszto/szinvalaszto.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DobozComponent
+    DobozComponent,
+    SzinvalasztoComponent
   ],
   imports: [
     BrowserModule
