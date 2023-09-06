@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'doboz';
+  szin:string = "yellow"
+  ujSzin(event:string){
+    console.log("APP_COMP: ",event)
+    this.szin= event
+  }
 }
